@@ -1,0 +1,5 @@
+# .gitignore
+
+# My Configuration
+.vscode
+*.code-workspace
