@@ -73,7 +73,7 @@
 </html>
 ```
 
-*HTML:*
+*CSS:*
 ```css
 * {
     margin: 0;
