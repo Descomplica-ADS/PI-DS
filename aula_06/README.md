@@ -1,5 +1,5 @@
 ###### Atividade Prática
-## Estilos Avançados 📝
+## Fundamentos sobre estilos 📝
 <br/>
 
 **Título da Prática:** Aplicação do uso de  CSS em um documento HTML.
@@ -12,11 +12,17 @@
 <br/><br/>
 
 **Atividade Prática**
-Nesta atividade prática, avançaremos no uso de estilos ao nosso código HTML com as propriedades do CSS e deixar o nosso layout mais interessante. Então para começar faremos os seguintes passos:
+Nesta atividade prática daremos estilos ao nosso código HTML com as propriedades do CSS e deixar o nosso layout mais interessante. Então para começar faremos os seguintes passos:
 
-_1º Passo:_ Dentro do arquivo `estilo.css` , defina que o `thead` terá seu texto alinhado no centro, a letra será em caixa alta e terá uma sobra da cor vermelha, posição horizontal de `2px`, posição vertical `3px` e raio da sobra de `4px`
+_1º Passo:_ Dentro do diretório `css` crie o arquivo `estilo.css`
 
-_2º Passo:_ Dentro do arquivo `estilo.css` , defina que o body terá a cor do texto da família `Arial, Helvetica, sans-serif;`
+_2º Passo:_ Abaixo da tag title no head inclua o link do css para o arquivo que você acabou de criar
+
+_3º Passo:_ Dentro do arquivo `estilo.css`, defina que o `h2` terá a cor do seu texto como `brown`
+
+_4º Passo:_ Dentro do arquivo `estilo.css`, defina que o `body` terá a cor de fundo como `burlywood`
+
+_5º Passo:_ Dentro do arquivo `estilo.css`, defina que a `table` terá a cor de fundo como `blueviolet` e a cor de texto `white`
 
 <br/><br/>
 
