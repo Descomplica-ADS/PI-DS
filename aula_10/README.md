@@ -1,8 +1,8 @@
 ###### Atividade Prática
-## Usando operadores em seu código 📝
+## Fundamentos do JavaScript 📝
 <br/>
 
-**Título da Prática:** Aplicação do uso de javascript em um documento HTML para trabalhar com operadores
+**Título da Prática:** Aplicação do uso de javascript em um documento HTML para tratar campos de um formulário
 <br/><br/>
 
 **Objetivos:** O aluno precisa identificar, codificar scripts em javascript e aplicar em um documento HTML.
@@ -12,7 +12,7 @@
 <br/><br/>
 
 **Atividade Prática**
-Nesta atividade prática, crie um documento html, dentro dele crie 2 campos: `valor1`, `valor2`. Em seguida crie uma função em javascript que pegue os valores dos campos e verifique se a soma deles é maior que `10`. Se for maior que `10`, imprima a mensagem `Valor acima de 10` dentro de uma div. Crie um botão que quando clicado chama a função que você criou.
+Nesta atividade prática, crie um documento html, dentro dele crie 3 campos: `nome`, `sobrenome` e `e-mail`. Em seguida, crie uma função em javascript que pegue os valores dos campos e imprima os valores dentro de uma `div`. Crie um botão que quando clicado chama a função que você criou.
 
 <br/><br/>
 

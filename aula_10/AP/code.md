@@ -9,44 +9,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link type="text/css" rel="stylesheet" href="styles.css">
+        <title>Pratica Integradora Desenvolvimento de Software</title>
 
-        <title>Soma de Dois Valores</title>
+        <link type="text/css" rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <form id="formCalc">
-            <label for="n1">Valor 1</label>
-            <input id="n1" name="n1" type="number">
+        <form id="getForm">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text">
 
-            <label for="n2">Valor 2</label>
-            <input id="n2" name="n2" type="number">
+            <label for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" name="sobrenome" type="text">
 
-            <div id="divResult">Resultado: -</div>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email">
 
-            <button type="button" onclick="calc()">Calcular</button>
+            <div id="divResult">VALORES: -</div>
+
+            <button type="button" onclick="calc()">Imprimir Valores</button>
         </form>
     </body>
 
     <script>
         function calc() {
-            const form = document.getElementById('formCalc')
-            const div = document.getElementById('divResult')
+            const form = document.getElementById('getForm')
+            const div  = document.getElementById('divResult')
 
-            const n1 = Number(form.children.n1.value)
-            const n2 = Number(form.children.n2.value)
+            const nome      = String(form.children.nome.value)
+            const sobrenome = String(form.children.sobrenome.value)
+            const email     = String(form.children.email.value)
 
-            const baseValue = 10
-            const resultCalc = n1 + n2
-
-            const valueAbove = value => div.innerHTML = `Resultado: ${value}<br/>Valor acima de ${baseValue}`
-            const equalValue = value => div.innerHTML = `Resultado: ${value}<br/>Valor igual a ${baseValue}`
-            const valueBelow = value => div.innerHTML = `Resultado: ${value}<br/>Valor abaixo de ${baseValue}`
-
-            resultCalc > baseValue
-                ? valueAbove(resultCalc)
-                : resultCalc == baseValue
-                    ? equalValue(resultCalc)
-                    : valueBelow(resultCalc)
+            if (nome.length && sobrenome.length && email.length)
+                return div.innerHTML = `VALORES: <br/><br/>${nome}<br/>${sobrenome}<br/>${email}`
         }
     </script>
 </html>
@@ -76,7 +70,7 @@ body {
 }
 
 form {
-    width: 20rem;
+    width: 22rem;
 
     background-color: #ffffff0d;
     box-shadow: 1rem 1rem 2rem 0 #00000033, inset 0rem -20rem 17rem -19rem #962dff80;

@@ -9,11 +9,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link type="text/css" rel="stylesheet" href="estilo.css">
+        <title>Pratica Integradora Desenvolvimento de Software</title>
 
-        <title>Estilos avançados</title>
+        <link type="text/css" rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
+        <h2>Fundamentos sobre estilos</h2>
+
         <table>
             <thead>
                 <tr>
@@ -86,19 +88,26 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-color: #100d1a;
+    background-color: burlywood;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(1rem * 2);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
+h2 { color: brown; }
+
 table {
-    background-color: #ffffff0d;
+    background-color: blueviolet;
+    color: white;
     border-collapse: collapse;
+
+    margin: 0 1rem;
 
     display: flex;
     flex-direction: column;
@@ -109,9 +118,8 @@ table {
 }
 
 thead {
-    background-color: white;
+    background-color: brown;
     color: coral;
-    text-shadow: 2px 3px 4px red;
     text-transform: uppercase;
     text-align: center;
 }

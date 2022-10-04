@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pratica Integradora Desenvolvimento de Software</title>
+
+        <link type="text/css" rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <form id="getForm">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" name="sobrenome" type="text">
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email">
+
+            <div id="divResult">VALORES: -</div>
+
+            <button type="button" onclick="calc()">Imprimir Valores</button>
+        </form>
+    </body>
+
+    <script>
+        function calc() {
+            const form = document.getElementById('getForm')
+            const div  = document.getElementById('divResult')
+
+            const nome      = String(form.children.nome.value)
+            const sobrenome = String(form.children.sobrenome.value)
+            const email     = String(form.children.email.value)
+
+            if (nome.length && sobrenome.length && email.length)
+                return div.innerHTML = `VALORES: <br/><br/>${nome}<br/>${sobrenome}<br/>${email}`
+        }
+    </script>
+</html>
